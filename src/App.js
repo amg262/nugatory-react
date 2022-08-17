@@ -27,9 +27,13 @@ class App extends Component {
         { this.state.words.map(word => 
           <Word 
             key={ word.id } 
+            // id={word.id}
             word={ word } 
-            onDelete={ this.handleDelete } />
+            onDelete={ this.handleDelete } 
+            // color={word.color} 
+            />
         )}
+        
         <Counter totalWords={ this.state.words.length } />
       </div>
      );
